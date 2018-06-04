@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ccb.pactera.dragrecyclerviewdemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:id="@+id/tv"
+            android:text="查看数据"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            />
+        <EditText
+            android:id="@+id/et_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:id="@+id/tv_add"
+            android:text="添加数据"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="#fc1"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
